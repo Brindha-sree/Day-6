@@ -1,0 +1,72 @@
+1.https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+
+class Movie {
+  constructor(title='',studio='',rating='PG'){
+    this.title=title;
+    this.studio=studio;
+      this.rating=rating;
+  }
+  
+  getPG(movies=[],rating=''){
+    return movies.filter((m)=>m.rating === rating);
+}
+
+const casionRoyaleMovie = new Movie('Casino Royale', 'Eon Productions', 'PG13');
+const kgf = new Movie ('kgf','Hombale Productions', 'PG');
+const vikram = new Movie ('vikram','Rajkamal Productions ', 'PG13');
+const ponniyinSelvan = new Movie ('PonniyinSelvan','Lyca Productions', 'PG');
+const minions = new Movie ('Minions','Universal Picture Productions', 'R');
+const rrr = new Movie ('RRR','DVV Productions', 'R');
+const joker = new Movie ('Joker','Born Studios Productions', 'PG');
+
+const moviesArray = [casinoRoyaleMovie, kgf,vikram, ponniyinSelvan, minions, rrr, joker];
+
+console.log(kgf.getPG(moviesArray,'R');
+console.log(kgf.getPG(moviesArray,'PG');
+console.log(kgf.getPG(moviesArray,'PG13');
+
+
+
+3.Write a "person" class to hold all the details
+
+
+class person {
+    constructor(name ,age, id , qualification, gender) {
+       this.name = name;
+       this.age = age;
+       this.id = id;
+       this.qualification=qualification;
+       this.gender=gender;
+    }
+getDetails(){
+  return 'person name'+this.name
+   return 'person age'+ this.age;
+   return 'person id'+ this.id;
+   return 'person qualification'+ this.qualification;
+  return 'person gender'+ this.gender;
+}
+}
+let details=new person('sree',24,'eb22','msc','female');
+console.log(details);
+
+
+4.Write a class to calculate the uber price.
+
+
+class uber{
+  constructor(strat,destination){
+    this.start=start;
+    this.destination=destination;
+  }
+  getAll(){
+    return 'uber start'+this.start;
+    return 'uber destination'+this.destination;
+  }
+}
+ let details=new uber('theni','madurai');
+ console.log(details);
+let p=10;
+let km=75;
+let z=p*km;
+console.log(z)
+
